@@ -1,0 +1,38 @@
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Inconsolata', monospace;
+  padding: 20px;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 675px) {
+    #wrapper {
+      width: 650px;
+      margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    th, td {
+      padding-right: 15px;
+    }
+    body {
+      margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    th, td {
+      font-size: 95%;
+    }
+    tr th:not(:last-child), td:not(:last-child) {
+      padding-right: 10px;
+    }
+}
