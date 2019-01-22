@@ -21,6 +21,21 @@ hr {
   width: 95%;
 }
 
+blockquote {
+  padding-left: 1.5rem;
+}
+
+ol {
+  margin-left: 40px;
+  padding-left: 3rem;
+}
+
+blockquote, ol {
+  border-left: 5px solid #64b5f6;
+  font-family: 'Fira Mono', monospace;
+  font-size: 85%;
+}
+
 a {
   text-decoration: none;
   font-weight: 700;
