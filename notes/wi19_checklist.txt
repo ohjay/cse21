@@ -1,0 +1,29 @@
+Things to Know
+--------------
+- will be updated as the quarter goes on
+- disclaimer: not necessarily comprehensive
+
+1. Counting
+   a. Rule of sum
+   b. Inclusion-exclusion principle
+   c. Rule of product
+   d. Counting with categories (division rule)
+   e. Complement trick
+   f. Sample k from n, where
+      fa. Order matters, replacement
+      fb. Order matters, no replacement
+      fc. Order doesn't matter, replacement
+      fd. Order doesn't matter, no replacement
+   g. Counting with recurrences
+      ga. Formulating recurrences
+      gb. Solving recurrences w/ guess & check
+      gc. Solving recurrences w/ unraveling
+
+2. Proofs
+   a. Proof by induction
+   b. Combinatorial proofs
+
+3. Asymptotic analysis
+   a. Big-omega notation
+   b. Big-theta notation
+   c. Big-O notation
