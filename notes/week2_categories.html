@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Counting with Categories | CSE 21</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="shortcut icon" href="../assets/favicon.png">
+</head>
+<body>
+  <div id="wrapper">
+    <h1>
+      <div><strong>CSE 21</strong></div>
+      <div>Math for Algorithms & Systems Analysis</div>
+    </h1>
+
+    <h2 style="margin-top: 1em">Counting with Categories</h2>
+
+    <div style="line-height: 1.5">
+      <p>In <b>counting with categories</b>, there are multiple arrangements and some are treated as the same (due to the existence of one or more "categories"). Thus, in order to determine the number of "actual" arrangements, we have to divide the total number of arrangements by the size of each category.</p>
+
+      <p style="text-align: right"><b><u>def.</u> size of one category</b><br>number of arrangements that are "the same" in one particular way</p>
+
+      <p>You can think of counting with categories as the "division rule."</p>
+
+      <p><b>Example.</b> A simple example is <b>fixed-density binary strings</b>. We pose the question "how many length-n binary strings contain k ones (for k &le; n)?" This is the same as asking "how many ways are there to order n elements, where k elements (ones) are all the same and the other n - k elements (zeros) are also all the same?"</p>
+
+      <p>There are n! ways to order n elements. But some of the elements are identical, so we're doing a lot of overcounting. We have to divide out by the number of ways to order the k ones and the number of ways to order the n - k zeros (k! arrangements are the same due to ones; (n - k)! arrangements are the same due to zeros).</p>
+
+      <p>So the answer is <b>n! / (k! (n - k)!)</b>, or <b>n choose k</b>.</p>
+
+      <p style="text-align: right"><a href="..">back</a></p>
+    </div>
+  </div>
+</body>
+</html>
