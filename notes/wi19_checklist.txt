@@ -27,3 +27,11 @@ Things to Know
    a. Big-omega notation
    b. Big-theta notation
    c. Big-O notation
+
+4. Sorting
+   a. Selection sort
+   b. Bubble sort
+   c. Insertion sort
+   d. Bucket sort
+   e. Merge sort
+   f. Loop invariants
