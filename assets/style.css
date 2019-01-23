@@ -13,12 +13,16 @@ th, td {
   padding-right: 30px;
 }
 
+li, th, td {
+  padding-bottom: 2px;
+}
+
 h1 {
   font-weight: 500;
 }
 
 hr {
-  width: 95%;
+  width: 92.9%;
 }
 
 blockquote {
