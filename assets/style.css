@@ -10,7 +10,11 @@ body {
 }
 
 th, td {
-  padding-right: 30px;
+  padding-right: 20px;
+}
+
+td + td {
+  padding-right: 16px;
 }
 
 li, th, td {
