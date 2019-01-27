@@ -19,14 +19,15 @@
     <h2 style="margin-top: 1em">Formulating Recurrences</h2>
 
     <div style="line-height: 1.5">
-      <p>To define a recurrence, you have to figure out how to define the problem for an input, e.g. T(n), in terms of smaller inputs, e.g. T(n - 1) and T(n - 2). There are multiple ways to go about this. (Note: we focus on counting problems here.)</p>
+      <p>(Note: we focus on counting problems here.) To define a recurrence, you have to figure out how to illustrate a problem T(n) in terms of the same problem(s) for smaller inputs, e.g. T(n - 1), T(n - 2). There are a few ways to go about this.</p>
 
       <p><b>1. Define T(n) = ... directly.</b></p>
       <ul class="bq">
-        <li>Think about the "inductive case": what does the T(n) setting add to whatever you had before? Or: how do you get to the T(n) setting? I often motivate my thinking by trying to "build up" from the T(n - 1) setting to the T(n) setting, even if there's ultimately more to do.</li>
-        <li>Sometimes, there'll be multiple options (<i>colored tiles</i>) or cases (<i>"use" or "don't use" n</i>), which'll require multiple recursive calls.</li>
+        <li>Think about the "inductive case": what does the T(n) setting add to whatever you had before? Or: how do you get to T(n)? I often try to motivate my thinking by "building up" from the T(n - 1) scenario to the T(n) scenario, even if there's ultimately something else to do.</li>
+        <li>Sometimes, there'll be multiple options (<i>different blocks</i>) or cases (<i>"use" or "don't use" n</i>), which'll require multiple recursive calls.</li>
         <li>If T(n) introduces elements to count which are independent of the ones that already exist (<i>handshakes</i>), add those elements directly.</li>
         <li>If T(n) introduces C elements for each of some set of elements that already exist (<i>colored tiles</i>), add C * the relevant recursive call.</li>
+        <li><b>Just count all the elements that should be included in T(n)</b>, e.g. <i>all valid length-n strings</i>. Define a single term for each group of elements, making sure not to double-count, until you've exactly covered all the elements. Then sum up the terms. And you're done!</li>
       </ul>
 
       <p><b>2. Work up from base cases.</b></p>

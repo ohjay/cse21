@@ -28,6 +28,7 @@ Things to Know
    b. Big-theta notation
    c. Big-O notation
    d. Proving each of these cases
+   e. Best, worst, and average case
 
 4. Sorting
    a. Selection sort
@@ -35,4 +36,6 @@ Things to Know
    c. Insertion sort
    d. Bucket sort
    e. Merge sort
-   f. Loop invariants
+
+5. Loop invariants
+   a. Proving loop invariants
