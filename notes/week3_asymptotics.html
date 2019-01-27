@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Week 3 Tip | CSE 21</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Fira+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="shortcut icon" href="../assets/favicon.png">
+</head>
+<body>
+  <div id="wrapper">
+    <h1>
+      <div><strong>CSE 21</strong></div>
+      <div>Math for Algorithms & Systems Analysis</div>
+    </h1>
+
+    <h2 style="margin-top: 1em">Week 3 Tip</h2>
+    <h3>Proving Asymptotic Classes</h3>
+
+    <div style="line-height: 1.5">
+      <p>To prove that f(n) is in Ω(g(n)), Θ(g(n)), or O(g(n)):</p>
+
+      <ol class="bq">
+        <li><b>Take the limit of f(n) / g(n) as n goes to infinity.</b>
+          <ul style="margin: 10px 0">
+            <li>If the limit is <b>finite</b>, it's big-O.</li>
+            <li>If the limit is <b>infinite</b> and <b>> 0</b>, it's big-Ω.</li>
+            <li>If the limit is <b>finite</b> and <b>> 0</b>, it's big-Θ.</li>
+          </ul>
+          You might need to L'Hôpital it a few times (differentiate top and bottom if both go to infinity). But if L'Hôpital fails you, e.g. there's a factorial involved, you should instead</li>
+        <li><b>find witnesses C and k and prove by induction that they hold – i.e. that |f(n)| &le; C|g(n)| for all n > k.</b> Note that if you're proving big-Θ, you need to do this both ways.</li>
+      </ol>
+
+      <p style="text-align: right"><a href="..">back</a></p>
+    </div>
+  </div>
+</body>
+</html>

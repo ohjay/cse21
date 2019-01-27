@@ -33,15 +33,19 @@ blockquote {
   padding-left: 1.5rem;
 }
 
-ol {
+ol, ul.bq {
   margin-left: 40px;
   padding-left: 3rem;
 }
 
-blockquote, ol {
+blockquote, ol, ul.bq {
   border-left: 5px solid #64b5f6;
   font-family: 'Fira Mono', monospace;
   font-size: 85%;
+}
+
+ol.bq > li, ul.bq > li {
+  padding-bottom: 10px;
 }
 
 a {

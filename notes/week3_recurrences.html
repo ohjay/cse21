@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulating Recurrences | CSE 21</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Fira+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="shortcut icon" href="../assets/favicon.png">
+</head>
+<body>
+  <div id="wrapper">
+    <h1>
+      <div><strong>CSE 21</strong></div>
+      <div>Math for Algorithms & Systems Analysis</div>
+    </h1>
+
+    <h2 style="margin-top: 1em">Formulating Recurrences</h2>
+
+    <div style="line-height: 1.5">
+      <p>To define a recurrence, you have to figure out how to define the problem for an input, e.g. T(n), in terms of smaller inputs, e.g. T(n - 1) and T(n - 2). There are multiple ways to go about this. (Note: we focus on counting problems here.)</p>
+
+      <p><b>1. Define T(n) = ... directly.</b></p>
+      <ul class="bq">
+        <li>Think about the "inductive case": what does the T(n) setting add to whatever you had before? Or: how do you get to the T(n) setting? I often motivate my thinking by trying to "build up" from the T(n - 1) setting to the T(n) setting, even if there's ultimately more to do.</li>
+        <li>Sometimes, there'll be multiple options (<i>colored tiles</i>) or cases (<i>"use" or "don't use" n</i>), which'll require multiple recursive calls.</li>
+        <li>If T(n) introduces elements to count which are independent of the ones that already exist (<i>handshakes</i>), add those elements directly.</li>
+        <li>If T(n) introduces C elements for each of some set of elements that already exist (<i>colored tiles</i>), add C * the relevant recursive call.</li>
+      </ul>
+
+      <p><b>2. Work up from base cases.</b></p>
+      <ul class="bq">
+        <li>If you need somewhere to start, define base cases (presumably, you have to do this anyway). Write out the first X and try to figure out how the latest base case can be derived from the one(s) before it.</li>
+      </ul>
+
+      <p style="text-align: right"><a href="..">back</a></p>
+    </div>
+  </div>
+</body>
+</html>

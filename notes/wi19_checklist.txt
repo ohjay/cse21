@@ -27,6 +27,7 @@ Things to Know
    a. Big-omega notation
    b. Big-theta notation
    c. Big-O notation
+   d. Proving each of these cases
 
 4. Sorting
    a. Selection sort
