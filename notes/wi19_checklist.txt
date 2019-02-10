@@ -21,7 +21,8 @@ Things to Know
 
 2. Proofs
    a. Proof by induction
-   b. Combinatorial proofs
+   b. Proof by strong induction
+   c. Combinatorial proofs
 
 3. Asymptotic analysis
    a. Big-omega notation
@@ -38,4 +39,13 @@ Things to Know
    e. Merge sort
 
 5. Loop invariants
-   a. Proving loop invariants
+   a. Identifying loop invariants
+   b. Proving existence of loop invariants
+
+6. Searching
+   a. Linear search
+   b. Binary search
+
+7. Divide and conquer
+   a. Designing/analyzing algorithms
+   b. Master theorem
