@@ -18,11 +18,18 @@ Things to Know
       ga. Formulating recurrences
       gb. Solving recurrences w/ guess & check
       gc. Solving recurrences w/ unraveling
+   h. Bijective counting
+      ha. Stars and bars
+          haa. Soldiers in castles
+          hab. >= 1 soldier in every castle
+      hb. Identifying bijections
 
 2. Proofs
-   a. Proof by induction
-   b. Proof by strong induction
-   c. Combinatorial proofs
+   a. Direct proof
+   b. Proof by cases
+   c. Proof by induction
+   d. Proof by strong induction
+   e. Combinatorial proofs
 
 3. Asymptotic analysis
    a. Big-omega notation
@@ -41,6 +48,7 @@ Things to Know
 5. Loop invariants
    a. Identifying loop invariants
    b. Proving existence of loop invariants
+   c. Proving correctness via loop invariants
 
 6. Searching
    a. Linear search
@@ -49,3 +57,9 @@ Things to Know
 7. Divide and conquer
    a. Designing/analyzing algorithms
    b. Master theorem
+
+8. Encoding
+   a. Encoding fixed-density strings
+   b. Lower and upper bounds for encoding
+   c. Theoretically optimal encodings
+   d. Algorithms for encoding and decoding
