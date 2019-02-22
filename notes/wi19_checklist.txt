@@ -63,3 +63,18 @@ Things to Know
    b. Lower and upper bounds for encoding
    c. Theoretically optimal encodings
    d. Algorithms for encoding and decoding
+
+9. Probability
+   a. Basic probability principles
+      aa. Defining the sample space
+      ab. Defining events in the sample space
+      ac. Probability distribution properties
+   b. Common distributions
+      ba. Uniform distribution
+      bb. Binomial distribution
+   c. Conditional probability
+      ca. Bayes' rule
+   d. Expectation and variance
+      da. Definitions
+      db. Conditional expectation
+      dc. Linearity of expectation
