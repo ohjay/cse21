@@ -3,7 +3,7 @@ Things to Know
 - will be updated as the quarter goes on
 - disclaimer: not necessarily comprehensive
 
-1. Counting
+0. Counting
    a. Rule of sum
    b. Inclusion-exclusion principle
    c. Rule of product
@@ -24,51 +24,52 @@ Things to Know
           hab. >= 1 soldier in every castle
       hb. Identifying bijections
 
-2. Proofs
+1. Proofs
    a. Direct proof
    b. Proof by cases
    c. Proof by induction
    d. Proof by strong induction
    e. Combinatorial proofs
 
-3. Asymptotic analysis
+2. Asymptotic analysis
    a. Big-omega notation
    b. Big-theta notation
    c. Big-O notation
    d. Proving each of these cases
    e. Best, worst, and average case
 
-4. Sorting
+3. Sorting
    a. Selection sort
    b. Bubble sort
    c. Insertion sort
    d. Bucket sort
    e. Merge sort
 
-5. Loop invariants
+4. Loop invariants
    a. Identifying loop invariants
    b. Proving existence of loop invariants
    c. Proving correctness via loop invariants
 
-6. Searching
+5. Searching
    a. Linear search
    b. Binary search
 
-7. Divide and conquer
+6. Divide and conquer
    a. Designing/analyzing algorithms
    b. Master theorem
 
-8. Encoding
+7. Encoding
    a. Encoding fixed-density strings
    b. Lower and upper bounds for encoding
    c. Theoretically optimal encodings
    d. Algorithms for encoding and decoding
 
-9. Probability
+8. Probability
    a. Basic probability principles
       aa. Defining the sample space
       ab. Defining events in the sample space
       ac. Probability distribution properties
+      ad. Independence
    b. Common distributions
       ba. Uniform distribution
       bb. Binomial distribution
@@ -78,3 +79,40 @@ Things to Know
       da. Definitions
       db. Conditional expectation
       dc. Linearity of expectation
+   e. Analysis of hashing
+
+9. Graphs
+   a. Lingo
+      aa. Types of graphs
+          aaa. Directed
+          aab. Undirected
+          aac. Simple
+          aad. Multigraph
+          aae. Directed acyclic
+          aaf. Complete
+          aag. Edgeless
+          aah. Complement
+          aai. Bipartite
+          aaj. Hypercube
+          aak. Tree (directed)
+          aal. Tree (undirected)
+          aam. Rooted tree
+          aan. Binary tree
+          aao. Full binary tree
+      ab. Degree
+      ac. Connectedness
+          aca. Connected components
+          acb. Weakly connected components
+          acc. Strongly connected components
+          acd. Bridges
+   b. Graph representations
+      ba. Adjacency list
+      bb. Adjacency matrix
+   c. Handshaking lemma
+   d. Paths and cycles
+      da. Eulerian paths/cycles
+      db. Hamiltonian paths/cycles
+      dc. Fleury's algorithm
+   e. Using graphs to model problems
+   f. Graph search
+      fa. Reachability

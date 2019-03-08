@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Burrito Shop | CSE 21</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Fira+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="shortcut icon" href="../assets/favicon.png">
+</head>
+<body>
+  <div id="wrapper">
+    <h1>
+      <div><strong>CSE 21</strong></div>
+      <div>Math for Algorithms & Systems Analysis</div>
+    </h1>
+
+    <h2 style="margin-top: 1em">RQ8 Q3: Burrito Shop</h2>
+
+    <div style="line-height: 1.5">
+      <blockquote>
+        A burrito shop messes up your order with an independent probability of 1/4 every time you visit. Let X be a random variable representing the total number of times they mess up your order across 16 separate visits. Thus X can be any integer from 0 to 16. What is var(X)?
+      </blockquote>
+
+      <p><b>Solution: var(X) = 3.</b> There are two main ways to arrive at this result.</p>
+
+      <ul class="bq">
+        <li>The first is to realize that X is a binomial random variable, yielding a variance of simply np(1 - p) = 16 * 1/4 * 3/4 = 3.</li>
+        <li>The second is to define 16 indicator (Bernoulli) variables Xi, one per visit, each taking on (e.g.) the value 1 if an order is messed up and 0 otherwise. Then var(Xi) = E[Xi^2] - E[Xi]^2 = 1/4 - (1/4)^2 = 3/16. Since the Xi's are i.i.d., var(X) = sum of 16 var(Xi)s = 3.</li>
+      </ul>
+
+      <p style="text-align: right"><a href="..">back</a></p>
+    </div>
+  </div>
+</body>
+</html>
