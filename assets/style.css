@@ -77,6 +77,11 @@ h2 {
   text-align: right;
 }
 
+#classqua {
+  font-size: 0.6em;
+  text-align: right;
+}
+
 #rights {
   color: #c69214;
   font-weight: 400;
@@ -117,9 +122,9 @@ tr td:nth-child(4), tr th:nth-child(4) {
 
 @media screen and (max-width: 674px) {
   tr td:nth-child(2), tr th:nth-child(2) {
-    width: 15%;
+    width: 5%;
   }
   tr td:nth-child(3), tr th:nth-child(3) {
-    width: 65%;
+    width: 75%;
   }
 }
