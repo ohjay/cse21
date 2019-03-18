@@ -5,25 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Formulating Recurrences | CSE 21</title>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Fira+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="../assets/style.css">
   <link rel="shortcut icon" href="../assets/favicon.png">
 </head>
 <body>
   <div id="wrapper">
     <h1>
-      <div><strong>CSE 21</strong></div>
-      <div>Math for Algorithms & Systems Analysis</div>
+      <div id="classnum">CSE 21</div>
+      <div id="classname">Math for Algorithms & Systems Analysis</div>
     </h1>
+
+    <hr style="margin-top: 2.2em" /> <!----------------------->
 
     <h2 style="margin-top: 1em">Formulating Recurrences</h2>
 
     <div style="line-height: 1.5">
-      <p>(Note: we focus on counting problems here.) To define a recurrence, you have to figure out how to illustrate a problem T(n) in terms of the same problem(s) for smaller inputs, e.g. T(n - 1), T(n - 2). There are a few ways to go about this.</p>
+      <p>(We focus on counting problems here.) To define a recurrence, you have to figure out how to illustrate a problem T(n) in terms of the same problem(s) for smaller inputs, e.g. T(n - 1), T(n - 2). There are a few ways to go about this.</p>
 
       <p><b>1. Define T(n) = ... directly.</b></p>
       <ul class="bq">
-        <li>Think about the "inductive case": what does the T(n) setting add to whatever you had before? Or: how do you get to T(n)? I often try to motivate my thinking by "building up" from the T(n - 1) scenario to the T(n) scenario, even if there's ultimately something else to do.</li>
+        <li>Think about the "inductive case": what does the T(n) setting add to whatever you had before? Or: how do you get to T(n)? I often motivate my thinking by "building up" from the T(n - 1) scenario to the T(n) scenario, even if there's ultimately something else to do.</li>
         <li>Sometimes, there'll be multiple options (<i>different blocks</i>) or cases (<i>"use" or "don't use" n</i>), which'll require multiple recursive calls.</li>
         <li>If T(n) introduces elements to count which are independent of the ones that already exist (<i>handshakes</i>), add those elements directly.</li>
         <li>If T(n) introduces C elements for each of some set of elements that already exist (<i>colored tiles</i>), add C * the relevant recursive call.</li>
